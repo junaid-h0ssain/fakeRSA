@@ -1,15 +1,9 @@
-import java.math.BigInteger;
+import java.lang.reflect.Member;
+
 public class Main {
     public static void main(String[] args) {
-        nmaker n = new nmaker();
+        encrypter cipher = new encrypter();
 
-        int m = 69;
-        BigInteger cipher = BigInteger.valueOf((long) Math.pow(m,n.e));
-//        System.out.println(n.getD());
-        System.out.println(cipher);
-        System.out.println( n.answer(cipher, BigInteger.valueOf(m)));
-
-
-
+        System.out.println(cipher.primeFinder(23));
     }
 }
